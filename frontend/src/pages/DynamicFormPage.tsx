@@ -208,7 +208,8 @@ function getDefaultValues(fields: FormField[]): Record<string, unknown> {
 
 interface FormFieldComponentProps {
   field: FormField;
-  form: ReturnType<typeof useForm>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  form: any;
 }
 
 function FormFieldComponent({ field, form }: FormFieldComponentProps) {
@@ -216,10 +217,10 @@ function FormFieldComponent({ field, form }: FormFieldComponentProps) {
     <form.Field
       name={field.id}
       validators={{
-        onChange: ({ value }) => validateField(field, value),
+        onChange: ({ value }: { value: unknown }) => validateField(field, value),
       }}
     >
-      {(fieldApi) => {
+      {(fieldApi: { state: { value: unknown; meta: { errors?: string[] } }; handleChange: (value: unknown) => void; handleBlur: () => void }) => {
         const error = fieldApi.state.meta.errors?.[0];
 
         return (
