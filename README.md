@@ -2,6 +2,11 @@
 
 A full-stack dynamic form system with React frontend and Node.js backend.
 
+## Live Demo
+
+- Frontend: https://dynamic-form-demo-2024.netlify.app
+- Backend API: https://dynamic-form-app-xgl9.onrender.com
+
 ## Milestone Completion Status
 
 ### Milestone 1 - Frontend Development ✅
