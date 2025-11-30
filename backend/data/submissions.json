@@ -1,0 +1,44 @@
+[
+  {
+    "id": "454f33b0-1d49-4978-a5d1-8d9c8b9e8e5b",
+    "data": {
+      "firstName": "Maansi",
+      "lastName": "Bisht",
+      "email": "maansibisht466@gmail.com",
+      "phone": "9999999999",
+      "age": "27",
+      "department": "engineering",
+      "skills": [
+        "typescript",
+        "javascript",
+        "python",
+        "react",
+        "nodejs"
+      ],
+      "startDate": "2025-11-28",
+      "bio": "m",
+      "remoteWork": true,
+      "termsAccepted": true
+    },
+    "createdAt": "2025-11-28T14:08:37.598Z"
+  },
+  {
+    "id": "7c8f96d3-0dac-46f2-a977-9d81eea93e98",
+    "data": {
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "test@example.com",
+      "phone": "1234567890",
+      "age": 25,
+      "department": "engineering",
+      "skills": [
+        "javascript"
+      ],
+      "startDate": "2025-12-01",
+      "bio": "",
+      "remoteWork": false,
+      "termsAccepted": true
+    },
+    "createdAt": "2025-11-28T14:19:47.539Z"
+  }
+]
